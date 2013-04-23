@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jsSharp.js"></script>
+    <script type="text/javascript">
+        var obj = {
+            id: 0,
+            name: "empty",
+            arr: [1, 2, "s"],
+            ob: {
+                where: "in object"
+            }
+        };
+
+        //console.log(Bruce1i.Sharp.helper.typeOf(obj));
+
+        var obj1 = obj.createNew();
+        //var obj1 = jSharp.helper.clone(obj);
+
+        console.log(obj.id);
+        console.log(obj1.id);
+        console.log(obj.name);
+        console.log(obj1.name);
+        console.log(obj.arr.toString());
+        console.log(obj1.arr.toString());
+        console.log(obj.ob.where);
+        console.log(obj1.ob.where);
+
+        console.log("");
+        obj.arr[1] = 9;
+        console.log(obj.arr.toString());
+        console.log(obj1.arr.toString());
+
+        console.log("");
+        obj.name = "hello1";
+        console.log(obj.name);
+        console.log(obj1.name);
+    </script>
+</head>
+<body>
+    <div id="d1"></div>
+</body>
+</html>
